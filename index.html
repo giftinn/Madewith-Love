@@ -33,7 +33,9 @@ position:absolute;
 width:90%;
 max-width:420px;
 max-height:90vh;
-overflow:auto;
+overflow:hidden;
+display:flex;
+flex-direction:column;
 background:#ffffff;
 border-radius:26px;
 padding:40px 32px;
@@ -238,6 +240,10 @@ color:#111844;
 opacity:.95;
 min-height:100px;
 animation:fadeInText 1.2s ease;
+
+max-height:260px;
+overflow-y:auto;
+padding-right:10px;
 }
 
 .signature{
@@ -556,7 +562,7 @@ function revealMemory(el){
     function typeParagraph(){
 
         if(p>=paragraphs.length){
-            sign.innerHTML="Sincerely<br> Me";
+            sign.innerHTML="With all my love,<br> Muti";
             return;
         }
 
